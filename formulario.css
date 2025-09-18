@@ -1,160 +1,85 @@
-/*
-fieldset
-{
-    background-color: aliceblue;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-input
-{
-    display: block;
-    margin-top:1%;
-}
-
-#inputuno
-{
-    background-color:rgb(42, 165, 56);
-}
-
-main
-{
-    justify-content:space-evenly;
-}
-
-.d1
-{
-    background-color: rgb(110, 115, 111);
-    margin-bottom: 10px;
-    margin-top: 5px;
-    display: flex;
-}
-
-.d1 input
-{
-    display: block;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border: 0;
-    height: 40px;
-    border: 3px solid rgb(0, 0, 0);
-}
-
-.d1 textarea
-{
-    display: block;
-    background-color: rgb(126, 123, 123);
-    margin-left: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    margin-right: 5px;
-    width: 80%;
-    height: 100px;
-}
-
-label
-{
-    font-display:auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    justify-content:center;
-}
-
-select
-{
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 15%;
-    height: 25px;
-    justify-content:center;
-}
-
-option
-{
-    background-color: blue;
-}
-*/
-
-body
-{   
+/* ====== ESTILOS GENERALES ====== */
+body {
     background-color: #726C4E;
-    height: 2000px;
-
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-main 
-{
-    background:  #635E56;
-    height: 2000px;
+/* ====== MAIN ====== */
+main {
+    background: #635E56;
+    min-height: 100vh;              
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-body h1 p
-{
+/* ====== TÍTULOS ====== */
+h1 {
     font-family: Arial, sans-serif;
     background-color: #6717a0;
+    color: #fff;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    text-align: center;
 }
 
-.contenedor /*dentro estan todas las poreguntas */
-{
+body h1 p {
+    /* No es necesario un p dentro de h1, se eliminó el estilo anidado */
+}
+
+/* ====== CONTENEDOR DEL CUESTIONARIO ====== */
+.contenedor {
     width: 70%;
+    max-width: 800px;
     margin: 20px auto;
     background: #d3d1d1;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    box-sizing: border-box;
 }
 
-#titulodecuestionario /*texto de titulo*/
-{
+/* Título del cuestionario */
+#titulodecuestionario {
     color: #333;
     text-align: center;
-    margin-bottom: 50px;
-    width: 70%;
-    background-color: transparent; /*especifiqué con un id para q no cambie el fondo de sprint, solo el fondo del titulo del cuestionario*/
-    
+    margin-bottom: 40px;
+    background-color: transparent;
+    font-size: 1.8rem;
 }
 
-p 
-{
+/* ====== PREGUNTAS Y OPCIONES ====== */
+p {
     font-size: 16px;
     color: #333;
-    font-weight: bold; /* preguntas en negrita */
-    margin-top: 25px;  /* espacio antes de cada pregunta */
-    margin-bottom: 10px; /* espacio después de la pregunta */
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
-
-label 
-{
-    display: block;   /* asegura que cada pregunta quede en su propia línea */
-    margin: auto;
+label {
+    display: block;
+    margin-bottom: 8px;
 }
 
-
-input[type="radio"], input[type="checkbox"] /* Separar un poco cada opción (radio/checkbox) */
-{
-    margin-top: 0px;
-    margin-bottom: 0px;
+/* Inputs y áreas de texto */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
 }
 
-input[type="number"], textarea 
-{
-    width: 98%;
+input[type="number"],
+textarea {
+    width: 100%;
     padding: 8px;
     margin: 5px 0 15px 0;
     border: 1px solid #ccc;
     border-radius: 6px;
+    box-sizing: border-box;
 }
 
-button /*enviar*/
-{
+/* Botón Enviar */
+button {
     background-color: #3f72af;
     color: #fff;
     border: none;
@@ -163,20 +88,8 @@ button /*enviar*/
     border-radius: 8px;
     cursor: pointer;
     display: block;
-    margin: auto;
+    margin: 20px auto 0;
+    transition: background 0.3s ease;
 }
 
-button:hover  /*efecto interactivo con el boton de enviar*/
-{
-    background-color: #2a5d84;
-}
-
-.obligatorio  /*asterisco de pregunta obligatoria*/
-{
-    color: red;
-}
-
-#logotitulo img {
-    background: none;
-}
-
+button:hover {
