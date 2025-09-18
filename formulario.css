@@ -1,0 +1,182 @@
+/*
+fieldset
+{
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+input
+{
+    display: block;
+    margin-top:1%;
+}
+
+#inputuno
+{
+    background-color:rgb(42, 165, 56);
+}
+
+main
+{
+    justify-content:space-evenly;
+}
+
+.d1
+{
+    background-color: rgb(110, 115, 111);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.d1 input
+{
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 0;
+    height: 40px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.d1 textarea
+{
+    display: block;
+    background-color: rgb(126, 123, 123);
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 80%;
+    height: 100px;
+}
+
+label
+{
+    font-display:auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content:center;
+}
+
+select
+{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 15%;
+    height: 25px;
+    justify-content:center;
+}
+
+option
+{
+    background-color: blue;
+}
+*/
+
+body
+{   
+    background-color: #726C4E;
+    height: 2000px;
+
+}
+
+main 
+{
+    background:  #635E56;
+    height: 2000px;
+}
+
+body h1 p
+{
+    font-family: Arial, sans-serif;
+    background-color: #6717a0;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor /*dentro estan todas las poreguntas */
+{
+    width: 70%;
+    margin: 20px auto;
+    background: #d3d1d1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+#titulodecuestionario /*texto de titulo*/
+{
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 70%;
+    background-color: transparent; /*especifiqué con un id para q no cambie el fondo de sprint, solo el fondo del titulo del cuestionario*/
+    
+}
+
+p 
+{
+    font-size: 16px;
+    color: #333;
+    font-weight: bold; /* preguntas en negrita */
+    margin-top: 25px;  /* espacio antes de cada pregunta */
+    margin-bottom: 10px; /* espacio después de la pregunta */
+}
+
+
+label 
+{
+    display: block;   /* asegura que cada pregunta quede en su propia línea */
+    margin: auto;
+}
+
+
+input[type="radio"], input[type="checkbox"] /* Separar un poco cada opción (radio/checkbox) */
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+input[type="number"], textarea 
+{
+    width: 98%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button /*enviar*/
+{
+    background-color: #3f72af;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+button:hover  /*efecto interactivo con el boton de enviar*/
+{
+    background-color: #2a5d84;
+}
+
+.obligatorio  /*asterisco de pregunta obligatoria*/
+{
+    color: red;
+}
+
+#logotitulo img {
+    background: none;
+}
+

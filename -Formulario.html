@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Verificación Funcional - Videojuego</title> <!-- completar nombre del juego -->
+
+    <link rel="stylesheet" href="resetgame.css">
+    <link rel="stylesheet" href="headergame.css">
+    <link rel="stylesheet" href="maingame.css">
+
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<header2>
+    <body>
+        <div id="barraparatitulo">
+            <h1>Sprint Du Chef</h1> <!-- completar nombre del juego -->
+        </div>
+    </body>
+</header2>
+
+<header1>
+        <div id="logotitulo">
+            <a href="index.html">
+                <img src="EdiciondeLogo.png" alt="Logo del juego" width="170" height="95"> <!-- poner .png a EdicondeLogo-->
+            </a>
+        </div>
+    <nav>
+    <ul>
+        <li><a href="index.html">Logica</a></li>
+    </ul>
+    </nav> 
+    <nav>
+        <ul>
+            <li><a href="-Cinematica.html">Cinematica</a></li>
+        </ul>
+    </nav>
+    <nav>
+    <ul>
+        <li><a>Cuestionario</a></li>
+    </ul>
+    </nav> 
+    <nav>
+    <ul>
+        <li><a href="-Creditos.html">Creditos</a></li>
+    </ul>
+    </nav>    
+</header1>
+
+<!--
+<main>
+    <form action="">
+        <div id="inputuno">
+
+            <div class="d1">
+                <label for="Edad"></label>
+                <input type="number" placeholder="Edad">
+            </div>
+
+            <div class="d1">
+                <label for="Nivel de gusto por los videojuegos"></label>
+                <input type="text" placeholder="Nivel de gusto por los videojuegos">
+            </div>
+
+            <div class="d1">
+                <label for="">Fecha de Inicio en el mundo Gamer</label>
+                <input type="date">
+            </div>
+
+            <div class="d1">
+                <label for="">Aspectos que más valora en un videojuego</label>
+                <textarea name="" id=""></textarea>
+            </div>
+
+            <div class="d1">
+                <label for="">Imagen</label>
+                <Input type="file">
+            </div>
+
+            <div class="d1">
+                <label for="">¿El estilo gráfico (pixel art) y los sonidos le ayudaron a sentirse en el mundo del juego?</label>
+                <label for="">Si, me gustó mucho</label>
+                <input type="radio" name="1"> <!-- el name con el mismo nombre "1" me permite seleccionar 1 elemento de los 4" en esta pregunta
+                <label for="">Algo</label>
+                <input type="radio" name="1">
+                <label for="">No lo noté</label>
+                <input type="radio" name="1">
+                <label for="">No me gustó</label>
+                <input type="radio" name="1">
+            </div>
+
+            <div class="d1">
+                <label for="">¿Cuáles de estos aspectos valora más en un videojuego?</label>
+                <label for="">Que tenga buena historia</label>
+                <input type="checkbox">
+                <label for="">Que sea entretenido o divertido</label>
+                <input type="checkbox">
+                <label for="">Que tenga buenos gráficos o sonidos</label>
+                <input type="checkbox">
+                <label for="">Que los controles sean fáciles</label>
+                <input type="checkbox">
+            </div>
+
+            <div class="d1">
+                <select name="" id="¿Cómo calificaría la dificultad del nivel jugado?">
+                    <option value="">Muy fácil</option>
+                    <option value="">Justa y entretenido</option>
+                    <option value="">Algo dificil</option>
+                    <option value="">Muy dificil o frustrante</option>
+                </select>
+            </div>
+
+            <div class="d1">
+                <Input type="button" value="Registrar Respuestas">
+            </div>
+
+        </div>
+
+    </form>
+</main>
+-->
+<main>
+ 
+<body>
+    <div class="contenedor">
+        <h1 id="titulodecuestionario">Cuestionario de Verificación Funcional - Videojuego Sprint du Chef</h1>
+        <p>
+            Evaluar la experiencia funcional del videojuego <b>Sprint du Chef</b> en aspectos como 
+            estructura, diseño de interfaces, interactividad, concepto gráfico, diseño de niveles y 
+            mecánicas, desde la percepción del jugador, con el fin de validar la calidad jugable y 
+            narrativa del prototipo.
+        </p>
+
+        <form>
+            <!-- Edad -->
+            <label for="edad">Indique su edad <span class="obligatorio">*</span></label>
+            <input type="number" id="edad" name="edad" required>
+
+            <!-- Pregunta 1 -->
+            <p>1. ¿Qué tanto le gustan los videojuegos donde se puede explorar niveles y avanzar por plataformas? <span class="obligatorio">*</span></p>
+            <label><input type="radio" name="p1" required> Me gustan mucho</label><br>
+            <label><input type="radio" name="p1"> A veces los juego</label><br>
+            <label><input type="radio" name="p1"> No me interesan mucho</label>
+
+            <!-- Pregunta 2 -->
+            <p>2. ¿Cuál de estos aspectos valora más en un videojuego? (elija uno) <span class="obligatorio">*</span></p>
+            <label><input type="radio" name="p2" required> Que tenga buena historia</label><br>
+            <label><input type="radio" name="p2"> Que sea entretenido o divertido</label><br>
+            <label><input type="radio" name="p2"> Que tenga buenos gráficos o sonidos</label><br>
+            <label><input type="radio" name="p2"> Que los controles sean fáciles</label>
+
+            <!-- Pregunta 3 -->
+            <p>3. ¿Conoce o le interesa la gastronomía (comida típica, recetas, chefs famosos)? <span class="obligatorio">*</span></p>
+            <label><input type="radio" name="p3" required> Sí, mucho</label><br>
+            <label><input type="radio" name="p3"> Algo</label><br>
+            <label><input type="radio" name="p3"> No, no me interesa</label>
+
+            <!-- Pregunta 4 -->
+            <p>4. ¿Qué tan fácil fue aprender a controlar al personaje (caminar, saltar, lanzar papas)? <span class="obligatorio">*</span></p>
+            <label><input type="radio" name="p4" required> Muy fácil</label><br>
+            <label><input type="radio" name="p4"> Normal</label><br>
+            <label><input type="radio" name="p4"> Me costó un poco</label><br>
+            <label><input type="radio" name="p4"> Difícil</label>
+
+            <!-- Pregunta 5 -->
+            <p>5. ¿Los objetivos del nivel estaban claros (por qué, hacia dónde y qué hacer)? <span class="obligatorio">*</span></p>
+            <label><input type="radio" name="p5" required> Totalmente claro</label><br>
+            <label><input type="radio" name="p5"> Algo claro</label><br>
+            <label><input type="radio" name="p5"> Poco claro</label><br>
+            <label><input type="radio" name="p5"> No entendí qué hacer</label>
+
+            <!-- Pregunta 6 -->
+            <p>6. ¿Le parecieron intuitivas las pantallas y menús (inicio, pausa, game over)? <span class="obligatorio">*</span></p>
+            <label><input type="radio" name="p6" required> Sí, muy fáciles de entender</label><br>
+            <label><input type="radio" name="p6"> Algunas partes sí, otras no</label><br>
+            <label><input type="radio" name="p6"> No, fueron confusas</label>
+
+            <!-- Pregunta 7 -->
+            <p>7. ¿El estilo gráfico (pixel art) y los sonidos le ayudaron a sentirse en el mundo del juego? <span class="obligatorio">*</span></p>
+            <label><input type="radio" name="p7" required> Sí, me gustó mucho</label><br>
+            <label><input type="radio" name="p7"> Algo</label><br>
+            <label><input type="radio" name="p7"> No lo noté</label><br>
+            <label><input type="radio" name="p7"> No me gustó</label>
+
+            <!-- Pregunta 8 -->
+            <p>8. ¿El nivel le motivó a seguir jugando y descubrir nuevas ciudades o recetas? <span class="obligatorio">*</span></p>
+            <label><input type="radio" name="p8" required> Sí, mucho</label><br>
+            <label><input type="radio" name="p8"> Tal vez un poco</label><br>
+            <label><input type="radio" name="p8"> No mucho</label><br>
+            <label><input type="radio" name="p8"> No</label>
+
+            <!-- Pregunta 9 -->
+            <p>9. ¿Cómo calificaría la dificultad del nivel jugado? <span class="obligatorio">*</span></p>
+            <label><input type="radio" name="p9" required> Muy fácil</label><br>
+            <label><input type="radio" name="p9"> Justa y entretenida</label><br>
+            <label><input type="radio" name="p9"> Algo difícil</label><br>
+            <label><input type="radio" name="p9"> Muy difícil o frustrante</label>
+
+            <!-- Pregunta 10 -->
+            <p>10. ¿Qué elementos del juego le parecieron más interesantes o divertidos? (respuesta abierta) <span class="obligatorio">*</span></p>
+            <textarea name="p10" rows="4" cols="50" required></textarea>
+
+            <!-- Botón enviar -->
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+<footer>
+    
+    <section id="section5">
+        <article class="art6">
+            <h2 id="article6">VideoJuego Sprint Du Chef</h2>
+        </article>
+    </section>
+
+    <div id="circulos">
+                <div id="circ"></div>
+            </div>
+
+    <section id="footer1">
+        <article class="foot1">
+            <h2 id="fff1">Instagram</h2>
+        </article>
+    </section>
+
+    <section id="footer2">
+        <article class="foot2">
+            <h2 id="fff2">WhatsApp</h2>
+        </article>
+    </section>
+
+<section id="footer3">
+        <article class="footer3">
+            <h2 id="fff3">YouTube</h2>
+        </article>
+    </section>
+</footer>
+
+</body>
+
+</main>
+</html>
