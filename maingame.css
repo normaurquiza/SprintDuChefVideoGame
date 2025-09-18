@@ -1,121 +1,94 @@
-/*Color de fondo de la pagina*/
-body
-{   
+/* ====== ESTILOS BASE ====== */
+body {   
     background-color: #726C4E;
+    margin: 0;
+    padding: 0;
 }
 
-/*Contiene las 3 cajas verticales*/
-main 
-{
-    /*background:#939393;*/
-    background:  #635E56 ;
+/* Contenedor principal */
+main {
+    background: #635E56;
     width: 99%;
-    height: 1000px;
+    min-height: 1000px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;               
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     margin: auto;
     margin-top: 0.5%;
+    gap: 1rem;                      
 }
 
-/*pie de pagina*/
-footer
-{
-  /*background: #ff0000;*/
+/* ====== FOOTER ====== */
+footer {
   background: #5852E3;
   width: 100%;
-  height: 90px;
+  min-height: 90px;
   display: flex;
   justify-content: center; 
   align-items: center;
   gap: 20px;     
   margin-top: 0.5%;
   border-radius: 30px 30px;
+  flex-wrap: wrap;                  
 }
 
-#footer1
-{
-    /*background: yellow;*/
+#footer1, #footer2, #footer3 {
     background: #E3CB52;
     width: 100px;
     height: 20%;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-#footer2
-{
-    /*background: yellow;*/
-    background: #E3CB52;
-    width: 100px;
-    height: 20%;
-    align-items: center;
-}
-
-#footer3
-{
-    /*background: yellow;*/
-    background: #E3CB52;
-    width: 100px;
-    height: 20%;
-    align-items: center;
-}
-
-/*circulos del footer*/
-#circulos 
-{
+#circulos {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#circ 
-{
-  background: rgb(255, 255, 255);
+#circ {
+  background: #fff;
   width: 60px;   
   height: 60px;  
   border-radius: 50%; 
 }
 
-/*caja donde esta el texto del footer*/
-#section5
-{
-    width:50%;
+#section5 {
+    width: 50%;
     height: 20px;
 }
 
-.art6
-{
+.art6 {
     width: 45%;
     height: 30px;
 }
 
-/*texto de footer videojuego sprint*/
-#article6
-{
+#article6 {
     font-size: 25px;
     color: #ffffff;
     font-style: oblique;
 }
 
-
-#section1 /*contiene la introduccion*/
-{
-    /*background: #d7a3a3;*/
+/* ====== SECCIONES ====== */
+#section1,
+#section2,
+#section3 {
     background: #E3CB52;
-    width:30%;
-    height: 500px;
+    width: 30%;
+    min-height: 500px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     margin: auto;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;     
+    align-items: center;
+    justify-content: center;
     border-radius: 10%;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
-.art1
-{
+.art1 {
     width: 40%;
     height: 75px;
     display: flex;
@@ -125,256 +98,61 @@ footer
     justify-content: center;
 }
 
-/*Contiene la introducción*/
-#article1
-{
-    width:50%;
+#article1 {
+    width: 50%;
     height: 50px;
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     margin: auto;
 }
 
-.art1 h2 /*titulo de introducción*/
-{
+.art1 h2 {
     font-size: 25px;
-    color: #000000;
-    font-style:normal;
+    color: #000;
     padding-top: 10%;
 }
 
-#section1 .txtcard p /*texto dentro de introducción*/
-{
-    color: #000000;
+#section1 .txtcard p,
+#section2 .txtcard p,
+#section3 .txtcard p {
+    color: #000;
     font-size: 15px;
     text-align: justify;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px 20px;
 }
 
-#section1 #article3  /*imagen del logo debajo de texto de introduccioón*/
-{
-   width: 250px;
+#section1 #article3,
+#section2 #article3,
+#section3 #article3 {
+   max-width: 100%;
 }
 
-#section2 /*contiene comcepto*/
-{
-    /*background: #d7a3a3;*/
-    background: #E3CB52;
-    width:30%;
-    height: 500px;
-    border-radius: 10%;
-    display:flex;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-#section2 .txtcard p /*texto dentro de concepto*/
-{
-    color: #000000;
-    font-size: 15px;
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-#section2 .art1 h2 /*titulo de concepto*/
-{
+/* Sección 2 título */
+#section2 .art1 h2 {
     font-size: 25px;
-    color: #000000;
-    font-style:normal;
+    color: #000;
     margin-left: 10px;
 }
 
-#section2 #article3
-{
-    width: 280px;
-    align-items: center;
-}
-
-h2
-{
-    background: 0;
+h2 {
+    background: none;
     font-size: 15px;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
     margin: auto;
-    justify-content: center;
-    align-items: center;
 }
 
-#section3
-{
-    /*background: #d7a3a3;*/
-    background: #E3CB52;
-    width:30%;
-    height: 500px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction:column;
-    align-items: center;
-    justify-content:center;
-    border-radius: 10%;
-    margin: auto;
-
-/*imagen dentro de seccion 3
-    background-image:url(1.png);
-    background-repeat:round;
-    background-size:contain;
-    background-position:initial;
-    opacity:20%;*/
-}
-
-/*imagen de seccion 3*/
-#section3 #article3
-{
-    width: 350px;
-    opacity: 100%;
-    padding-top: 10px;
-}
-
-
-#section3 h2 /*alcance y objetivo*/
-{
+#section3 h2 {
     font-size: 25px;
-    color: #000000;
-    font-style:normal;
+    color: #000;
     padding-top: 5%;
     margin-bottom: 10px;
 }
 
-#section3 .txtcard p /*texto dentro de alcance y objetivo*/
-{
-    color: #000000;
-    font-size: 15px;
-    text-align: justify;
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-/*caja con color de fondo de cinematica y creditos*/
-ul 
-{
-    background: 0;
-    display: flex;
-    align-items:center;
-    width: 90%;
-    justify-content:space-evenly;
-    border-radius: 50%;
-
-}
-
-/*caja con color de fondo de cinematica y creditos*/
-li
-{
-    background-color: transparent;
-    display:flex;
-    width: 65%;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 40%;
-}
-
-
-/*Contiene los textos de historia, cinematica, cuestionario y creditos*/
-a
-{
-    text-decoration: none;
-    font-size: 20px;
-    color: #000000;
-    margin: auto;
-    font-weight: bold;
-}
-
-.art4 h2
-{
-    text-decoration: none;
-    font-size: 40px;
-    color: #ffffff;
-    font-style: oblique;
-}
-
-.art5 h2
-{
-    margin-top: 7%;
-    text-decoration: none;
-    font-size: 30px;
-    color: #ffffff;
-    font-style: normal;
-}
-
-#section4
-{
-    /*background: #d7a3a3;*/
+/* ====== SECCIÓN 4 ====== */
+#section4 {
     background: #E3CB52;
-    width:95%;
-    height: 400px;
+    width: 95%;
+    min-height: 400px;
     display: flex;
-    flex-wrap: nowrap;
-    /*flex-direction:column;*/
-    flex-direction:initial;
-    align-items: center;
-    justify-content:space-between;
-    margin: auto;
-    border-radius: 20PX 20PX;
-}
-
-/*texto dentro de seccion 4*/
-#section4 .txtcard p
-{
-    color: #000000;
-    font-size: 15px;
-    text-align: justify;
-    margin-left: 35px;
-    margin-right: 30px;
-}
-
-#section4 h2
-{
-    font-size: 25px;
-    color: #000000;
-    font-style:normal;
-    margin-left: 25px;
-}
-#section4 #imgMini
-{
-    width: 400px;
-}
-
-/*los siguientes elementos permiten abrir y cerrar la imagen del diagrama de flujo, a modo de ampliación*/
-
-.modal 
-{
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-contenido 
-{
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
-}
-
-.cerrar 
-{
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
