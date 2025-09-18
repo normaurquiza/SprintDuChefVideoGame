@@ -1,74 +1,85 @@
-header1
-{
+/* ====== CONTENEDOR PRINCIPAL DEL HEADER ====== */
+header1 {
     margin: auto;
     background-color: #E3AD52;
     height: 100px;
     width: 100%;
-    /*a la caja grande le pongo el display flex para organizar
-    las cajas de adentro*/
     display: flex;
     align-items: center;
-    justify-content:space-around;
-    
+    justify-content: space-around;
+    flex-wrap: wrap;         
+    padding: 0 1rem;          
 }
 
-#barraparatitulo
-{
+/* Barra del título */
+#barraparatitulo {
     background-color: #5852E3;
-    height: 30px;;
-    width: 100%;  
+    height: 30px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-/*Contiene los titulos de  cinematica y los creditos*/
-nav
-{
-    /*background: #908e8e; */
+/* ====== NAVEGACIÓN ====== */
+nav {
     background: #8d8be3;
-    height:25px;
-    width:10%;
+    height: 25px;
+    width: auto;               
+    padding: 0 10px;           
     display: flex;
     align-items: center;
-    border-radius: 20PX 20PX;
+    border-radius: 20px;
+    margin: 5px;            
 }
 
-/*caja que contiene la imagen del logo*/
-#logotitulo 
-{
+/* ====== LOGO ====== */
+#logotitulo {
     background: #ffffff;
     width: 11%;
-    height: 10;
+    min-width: 100px;          
     display: flex;
     align-items: center;
-    justify-content:center; 
+    justify-content: center;
 }
 
-/*imagen de logo*/
-im
-{
-    margin: auto;
+/* Imagen del logo */
+img {
+    max-width: 100%;           
+    height: auto;
 }
 
-/*Caja de color que Contiene el titulo de sprint du chef*/
-h1
-{
-    /*background:  #548989;*/
+/* ====== TÍTULO ====== */
+h1 {
     background: #E3AD52;
     width: 15%;
-    height: 14xp;
+    min-width: 120px;         
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
     margin: auto;
-    border-radius: 20PX 20PX;
+    border-radius: 20px;
 }
 
+/* ====== AJUSTES PARA PANTALLAS PEQUEÑAS ====== */
+@media (max-width: 600px) {
+    header1 {
+        height: auto;         
+        flex-direction: column;
+        padding: 10px 0;
+    }
 
+    nav {
+        width: 80%;            
+        justify-content: center;
+    }
 
+    h1 {
+        width: auto;         
+        font-size: 18px;
+    }
 
-
-
-
+    #logotitulo {
+        width: 40%;            /* ✅ Ajusta el logo */
+    }
+}
