@@ -1,66 +1,37 @@
-/* ====== ESTILOS BASE ====== */
-main {
-    display: flex;
-    flex-direction: column;       
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;             
-    padding: 1rem;
-    box-sizing: border-box;
+
+main
+{
+   flex-direction: column;
 }
 
-header {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;      
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
+header
+{
+   background-color: transparent;
+   flex-direction: column;
 }
 
-p {
+p
+{
     background-color: transparent;
     font-size: 20px;
     margin-top: 5%;
+    justify-content: center;
     text-align: center;
-    color: #ffffff;
+    color: white;
     font-family: monospace;
-    max-width: 90%;               
 }
 
-/* ====== ENLACE/BOTÓN ====== */
-.enlace {
-    display: block;
+.enlace 
+{
+    display:block;
     margin-top: 5%;
     padding: 10px 20px;
-    background: #E3CB52;
-    color: #000;
+    background: #E3CB52;  
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 10px;
     font-size: 18px;
     text-align: center;
     font-family: monospace;
-    transition: background 0.3s ease;
 }
 
-.enlace:hover {
-    background: #d1b840;          
-}
-
-/* ====== AJUSTES PARA PANTALLAS GRANDES ====== */
-@media (min-width: 768px) {
-    main {
-        max-width: 800px;         
-        margin: 0 auto;
-    }
-
-    p {
-        font-size: 22px;
-    }
-
-    .enlace {
-        font-size: 20px;
-    }
-}
